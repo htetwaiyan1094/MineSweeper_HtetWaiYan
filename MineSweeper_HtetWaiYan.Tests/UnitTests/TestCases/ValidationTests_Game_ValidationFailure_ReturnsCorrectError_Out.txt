@@ -1,0 +1,29 @@
+﻿Welcome to Minesweeper!
+
+Enter the size of the grid (e.g. 4 for a 4x4 grid):
+
+Enter the size of the grid (e.g. 4 for a 4x4 grid):
+Minimum size of grid is 2.
+
+Enter the size of the grid (e.g. 4 for a 4x4 grid):
+Maximum size of grid is 10.
+
+Enter the size of the grid (e.g. 4 for a 4x4 grid):
+Incorect input.
+
+Enter the number of mines to place on the grid (maximum is 35% of the total squares):
+
+Enter the number of mines to place on the grid (maximum is 35% of the total squares):
+Maximum number is 35% of total sqaures.
+
+Enter the number of mines to place on the grid (maximum is 35% of the total squares):
+There must be at least 1 mine.
+
+Enter the number of mines to place on the grid (maximum is 35% of the total squares):
+Incorect input.
+
+Here is your minefield:
+  1 2 3
+A _ _ _
+B _ _ _
+C _ _ _
