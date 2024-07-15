@@ -46,21 +46,17 @@ attention to detail.
 
 1. End-To-End Tests
     Game Logic Tests
-i. ```Game_UserWon_ReturnsCongratulations``` – automated test script will find all non-mine
+    1. ```Game_UserWon_ReturnsCongratulations``` – automated test script will find all non-mine
 cells and input them until player won the game.
-ii. ```Game_GameOver_ReturnsGameOver``` – automated test script will find one mine cell and
+    2. ```Game_GameOver_ReturnsGameOver``` – automated test script will find one mine cell and
 input. Expected output is game over message.
 
 2. Unit Tests
-
-i. General Tests, ```GameInit_SizeMines_ReturnCorrectGameState``` – to check if all cells are
-correctly populated and mines are properly placed.
-ii. Utility Tests, ```GetAdjacentCell_AllDirectionsOfX1Y1_ReturnsCorrectCells``` – to test if
-GetAdjacentCell method returns correct cells of all directions of cell B2 (x: 1, y: 1).
-iii. Validation Tests, ```Game_ValidationFailure_ReturnsCorrectError``` – test input and output are
-prepared according to validation scenarios in coding exercise instruction.
-```/UnitTests/TestCases/ValidationTests_Game_ValidationFailure_ReturnsCorrectError_In.txt```
-```/UnitTests/TestCases/ValidationTests_Game_ValidationFailure_ReturnsCorrectError_In.txt```
+    1. General Tests, ```GameInit_SizeMines_ReturnCorrectGameState``` – to check if all cells are correctly populated and mines are properly placed.
+    2. Utility Tests, ```GetAdjacentCell_AllDirectionsOfX1Y1_ReturnsCorrectCells``` – to test if GetAdjacentCell method returns correct cells of all directions of cell B2 (x: 1, y: 1).
+    3. Validation Tests, ```Game_ValidationFailure_ReturnsCorrectError``` – test input and output are prepared according to validation scenarios in coding exercise instruction.
+        ```/UnitTests/TestCases/ValidationTests_Game_ValidationFailure_ReturnsCorrectError_In.txt```
+        ```/UnitTests/TestCases/ValidationTests_Game_ValidationFailure_ReturnsCorrectError_In.txt```
 
 ## Running and Testing the Game:
 
@@ -72,24 +68,24 @@ To run the Minesweeper game:
 
 1. Unzip the project zip.
 2. <ins>Using IDE</ins>
-    i. Open “MineSweeper_HtetWaiYan.sln” in Visual Studio or preferred IDE.
-    ii. Ensure that “MineSweeper_HtetWaiYan” is set as startup project.
-    iii. Click on Play button
+    1. Open “MineSweeper_HtetWaiYan.sln” in Visual Studio or preferred IDE.
+    2. Ensure that “MineSweeper_HtetWaiYan” is set as startup project.
+    3. Click on Play button
 
     <ins>Using dotnet command</ins>
-    i. Open command prompt in project root folder.
-    ii. Execute ```dotnet run --project MineSweeper_HtetWaiYan``` in the folder.
+    1. Open command prompt in project root folder.
+    2. Execute ```dotnet run --project MineSweeper_HtetWaiYan``` in the folder.
 
 To run Test Cases
 
 1. Unzip the project zip.
 2. <ins>Using IDE</ins>
-    i. Open “MineSweeper_HtetWaiYan.sln” in Visual Studio or preferred IDE.
-    ii. Click “Run All” to execute all test cases.
+    1. Open “MineSweeper_HtetWaiYan.sln” in Visual Studio or preferred IDE.
+    2. Click “Run All” to execute all test cases.
 
     <ins>Using dotnet command</ins>
     Open command prompt in project root folder.
     Execute commands as below in the same order
-    i. ```dotnet add MineSweeper_HtetWaiYan.Tests package MSTest.TestFramework```
-    ii. ```dotnet test```
+    1. ```dotnet add MineSweeper_HtetWaiYan.Tests package MSTest.TestFramework```
+    2. ```dotnet test```
 
