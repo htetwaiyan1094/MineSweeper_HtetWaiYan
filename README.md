@@ -83,8 +83,8 @@ To run Test Cases
     2. Click “Run All” to execute all test cases.
 
     <ins>Using dotnet command</ins>
-    Open command prompt in project root folder.
-    Execute commands as below in the same order
-    1. ```dotnet add MineSweeper_HtetWaiYan.Tests package MSTest.TestFramework```
-    2. ```dotnet test```
+    1. Open command prompt in project root folder.
+    1. Execute commands as below in the same order
+        1. ```dotnet add MineSweeper_HtetWaiYan.Tests package MSTest.TestFramework```
+        2. ```dotnet test```
 
