@@ -20,24 +20,24 @@ attention to detail.
 ## Design Architecture and Implementation Approach
 
 1. Ensure lean and readable codes
-    i. By keeping all files in proper format and removing unnecessary usings
-    ii. By following standard naming conventions across the project.
-    iii. By using some approaches like using enums, C# extension methods (example.
+    1. By keeping all files in proper format and removing unnecessary usings
+    2. By following standard naming conventions across the project.
+    3. By using some approaches like using enums, C# extension methods (example.
        **```Direction.Up```** , **```cell.GetAdjacentCells()```** in extension class)
 2. Core game logic is implemented in the base abstract class, while Console App capabilities are
     encapsulated in a separate child class. This approach enhances the project's extensibility by
     facilitating integration with various platforms such as WinForms, WPF, web-based ASP.NET
     applications, and other C# based game engines (Unity).
-**3. SOLID principles**
-    Single Responsibility Principle – ensure all classes / methods to be as small as possible and each has
+3. **SOLID principles**
+    * Single Responsibility Principle – ensure all classes / methods to be as small as possible and each has
     only one purpose / job.
-    Open/Closed Principle – **```BaseMineSweeperGame```** class allows extending functionalities like Console
-    capabilities but would not allow to update core game logics.
-    Liskov’s Substitution Principle – **```ConsoleMineSweeperGame```** is substitutable for their base or parent
+    * Open/Closed Principle – **```BaseMineSweeperGame```** class allows extending functionalities like Console
+      capabilities but would not allow to update core game logics.
+    * Liskov’s Substitution Principle – **```ConsoleMineSweeperGame```** is substitutable for their base or parent
     class **```BaseMineSweeperGame```** without affecting core game logics.
-    Interface Segregation Principle – Implemented **```IHasGamePlatform```** , **```IInputOutputHandler```** and some
+    * Interface Segregation Principle – Implemented **```IHasGamePlatform```** , **```IInputOutputHandler```** and some
     other interfaces to make sure all components only need to implement interfaces relevant to them.
-    Dependency Inversion Principle – Implemented Game Platform and Console handler as dependencies
+    * Dependency Inversion Principle – Implemented Game Platform and Console handler as dependencies
     so that we could use **```MockConsole```** in test cases and make it extensible to other game platforms.
 
 
