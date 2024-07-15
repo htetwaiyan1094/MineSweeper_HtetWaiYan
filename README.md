@@ -1,5 +1,4 @@
-## Coding Test Full Stack Developer
-## MineSweeper Game
+# MineSweeper Game
 
 ## Introduction
 
